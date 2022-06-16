@@ -77,7 +77,7 @@ This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamem
     
    Links:
    [Github](https://github.com/GustiGameDev/Jazztrobox)
-    Steam Workshop
+    [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2821790444)
    Credits:  
    
    [Gusti](https://steamcommunity.com/id/GustiDev)    :Lua scripting  

@@ -31,7 +31,6 @@ util.AddNetworkString( "stopsound" )
 
 function ENT:Use(c , a)
     self:SetUseType( SIMPLE_USE )
-    print("test")
     net.Start( "jazzboxgui" )
     net.Send( c )
 end
@@ -43,7 +42,6 @@ function ENT:Think()
                 Entity( player.GetAll()[k]:EntIndex() ):EmitSound( Jazz_Songs_jukebox[jazzfloat] ) 
                 isplaying = true
             elseif isplaying == true then
-                print("work")
                 Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[1])
                 Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[2])
                 Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[3])

@@ -1,6 +1,6 @@
 ENT.type = "anim"
 ENT.Base = "base_gmodentity"
-
+ENT.Category = "Jazztrobox"
 ENT.PrintName = "Jazztronauts jukebox"
 
 ENT.Spawnable = true

@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "jazztrobox/jukebox/railtexture"
+	"$translucent" 0
+}

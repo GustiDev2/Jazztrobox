@@ -1,52 +1,31 @@
 # Jazztrobox
 Adds a jukebox entity that plays songs from Jazztronauts to liven up places
 
-**ONLY WORKS ON SINGLEPLAYER AT THE MOMENT!**
+**SHOULD WORK ON MULTIPLAYER NOW**
 
 This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamemode [Jazztronauts](https://steamcommunity.com/sharedfiles/filedetails/?id=1452613192)
 
 **Song List:**
-
   All Spice  
-  
   5 4 3 2 1  
-  
   Band Outro  
-  
   Bartender Song  
-  
   Big Bang Funk  
-  
   Danger Song  
-  
   Drum Thunder  
-  
   Love Affair  
-  
   Pariah  
-  
   Pianist Song  
-  
   Plumskinzz  
-  
   Pocket  
-  
   Singer Song  
-  
   Warm Song  
-  
   You Did It Again  
-  
   Intermission Music  
-  
   Trash Chute Loop  
-  
   Que Chevere Full Version  
-  
   Que Chevere Short Version  
-  
   Last Heist  
-  
   **FAQ**  
     Q: Where is the jukebox located?  
     A: It is located in the spawnmenu under entities/Jazztrobox
@@ -76,7 +55,8 @@ This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamem
     This addon does not support multiplayer/multiple jukeboxes at the moment sorry, but I will work on it
     
    Links:
-   [Github](https://github.com/GustiGameDev/Jazztrobox)
+   [OLD Ver. Github](https://github.com/GustiGameDev/Jazztrobox)
+   [New Ver. Github](https://github.com/GustiGameDev/Jazztrobox)
     [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2821790444)
    Credits:  
    

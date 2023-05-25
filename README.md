@@ -60,12 +60,15 @@ This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamem
    
    **Known Bugs**  
     Sometimes the song wont play when i click it
-      It does do that once in a while, just click on the song again and it should play.
+  
+   It does do that once in a while, just click on the song again and it should play.
 
 Nuclear Stop sounds
+
   It Just does that, I tried to find a workaround, but to no avail. I'll try fixing it sometime :p
   
    Links:
+   
    [OLD Ver. Github](https://github.com/GustiGameDev/Jazztrobox)
    
    [New Ver. Github]([https://github.com/GustiGameDev/Jazztrobox](https://github.com/GustiDev2/Jazztrobox))

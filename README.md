@@ -4,8 +4,8 @@ Ver 2.
 
 **SHOULD WORK ON MULTIPLAYER NOW**
 
-Ver 2 Changes:
-stopped using entity:EmitSound and used sound.Play
+**Ver 2 Changes:**   
+stopped using entity:EmitSound and used sound.Play instead.   
 Sound should come out of the jukebox now.
 
 This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamemode [Jazztronauts](https://steamcommunity.com/sharedfiles/filedetails/?id=1452613192)
@@ -42,30 +42,31 @@ This addon adds a jukebox entity that plays the songs from the Garry's Mod Gamem
    if you don't like this change, you could download the old version from my old github, and importing it yourself to GMod.
    
    Q: Does this addon support multiple Jukeboxes?  
-   A: While you can technically put multiple jukeboxes on the map, you cannot play 2 songs using 2 jukeboxes because the song is not emitted on  
-   the jukebox but the player itself, though it might change in future updates
+   A: As of Ver 2. If you try playing from a second jukebox while the first is playing, it will stop the sound from the first one
+   and jumps to the second. Sorry!
    
    Q: I found a bug, what should i do?  
    A: Firstly, if you found a bug, look at the known bugs to see if the bug has been reported, if not Create an issue with an appropriate title  
    and write the bug and, if you can how to recreate the bug
    
    Q: May I edit this addon and upload it?  ex: An edit with different songs?  
-   A: Do whatever you like with it, goes with the old version of my mod.
+   A: Do whatever you like with it, no need to credit anybody, same goes with the old version of my Addon.
    
-   Q:Why different Repo?
+   Q:Why different Repo?   
       A:Forgot old password...
    
-   Q: This Addon Sucks  
-   A: That's not a question, but I am sorry if it sucks because this is my first introduction to lua, gmod scripting, and coding as a whole
+   Q: This Addon Still Sucks  
+   A: :(
    
    **Known Bugs**  
-    Sometimes the song wont play when i click it
-  
-   It does do that once in a while, just click on the song again and it should play.
+    Sometimes the song wont play when i click it   
+   It does do that once in a while, just click on the song again and it should play.   
 
-Nuclear Stop sounds
+Nuclear Stop sounds   
+It Just does that, I tried to find a workaround, but to no avail. I'll try fixing it sometime :p
 
-  It Just does that, I tried to find a workaround, but to no avail. I'll try fixing it sometime :p
+Jukebox Too heavy and instakills people   
+A bug, but I found it too funny so I made it into a feature.
   
    Links:
    

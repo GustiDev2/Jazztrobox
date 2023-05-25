@@ -74,6 +74,7 @@ Nuclear Stop sounds
    [New Ver. Github](https://github.com/GustiDev2/Jazztrobox)
    
    [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2821790444)
+   
    Credits:  
    
    [Gusti](https://steamcommunity.com/id/GustiDev)    :Lua scripting  

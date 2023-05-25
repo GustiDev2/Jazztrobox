@@ -21,9 +21,10 @@ function ENT:Initialize()
         phys:Wake()
     end
 
-    
-
+    audfix = self:GetPos()
 end
+
+
 
 util.AddNetworkString( "floatshit" )
 util.AddNetworkString( "jazzboxgui" )
@@ -39,30 +40,11 @@ function ENT:Think()
         net.Receive("floatshit", function(self)
             local jazzfloat = net.ReadFloat()
             if isplaying== false then
-                Entity( player.GetAll()[k]:EntIndex() ):EmitSound( Jazz_Songs_jukebox[jazzfloat] ) 
                 isplaying = true
+                sound.Play( Jazz_Songs_jukebox[jazzfloat], Vector(audfix), 75, 100, 1 )
             elseif isplaying == true then
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[1])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[2])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[3])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[4])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[5])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[6])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[7])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[8])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[9])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[10])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[11])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[12])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[13])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[14])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[15])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[16])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[17])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[18])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[19])
-                Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[20])
-                Entity( player.GetAll()[k]:EntIndex() ):EmitSound( Jazz_Songs_jukebox[jazzfloat] ) 
+                RunConsoleCommand("stopsound", "");
+                timer.Simple( 0.1, function() sound.Play( Jazz_Songs_jukebox[jazzfloat], Vector(audfix), 75, 100, 1 )  end )
                             
             end
 
@@ -72,27 +54,8 @@ function ENT:Think()
 
 
         net.Receive("stopsound", function()
-
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[1])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[2])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[3])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[4])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[5])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[6])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[7])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[8])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[9])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[10])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[11])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[12])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[13])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[14])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[15])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[16])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[17])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[18])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[19])
-            Entity( player.GetAll()[k]:EntIndex() ):StopSound(Jazz_Songs_jukebox[20])
+            RunConsoleCommand("stopsound", "");
+            isplaying = false
 
 
 
@@ -104,6 +67,7 @@ function ENT:Think()
 end
 
 function ENT:OnRemove()
+    isplaying = false
 RunConsoleCommand("stopsound", "");
 end
 
